@@ -5,16 +5,17 @@ for x in range (323):
 
 k.append("." * len(k[0]))
 
-currenty, currentx = 0, 0
 done = False
 trees = [0], [0], [0], [0], [0]
 
 directionsx = [1], [3], [5], [7], [1]
 directionsy = [1], [1], [1], [1], [2]
 
-while (done == False):
-  for x in range (len(directionsx)):
-    print(trees, currenty, currentx)
+for x in range (len(directionsx)):
+  done = False
+  currenty, currentx = 0, 0
+  while (done == False):
+    
     if (currenty > len(k) - 1):
       done = True
       break
@@ -32,4 +33,4 @@ while (done == False):
     else:
       currenty += directionsy[x][0]
 
-print(trees)
+print(trees[0][0] * trees[1][0] * trees[2][0] * trees[3][0] * trees[4][0])
