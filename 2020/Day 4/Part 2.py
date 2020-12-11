@@ -78,7 +78,7 @@ def scan(g):
           true += 1
       elif (g[x][y][:3] == "pid"):
         #print("pid")
-        if (m[0] == "0" and len(m) == 9):
+        if (len(m) == 9):
           #print("true")
           true += 1
     #print(true)
