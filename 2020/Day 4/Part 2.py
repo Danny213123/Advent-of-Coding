@@ -48,11 +48,11 @@ def scan(g):
         #print("hgt")
         ht = (g[x][y][len(g[x][y]) - 2:])
         if (ht == "cm"):
-          if (int(g[x][y][4:len(g[x][y]) - 2]) > 150 and int(g[x][y][4:len(g[x][y]) - 2]) < 193):
+          if (int(g[x][y][4:len(g[x][y]) - 2]) >= 150 and int(g[x][y][4:len(g[x][y]) - 2]) <= 193):
             #print("true")
             true += 1
         elif (ht == "in"):
-          if (int(g[x][y][4:len(g[x][y]) - 2]) > 59 and int(g[x][y][4:len(g[x][y]) - 2]) < 76):
+          if (int(g[x][y][4:len(g[x][y]) - 2]) >= 59 and int(g[x][y][4:len(g[x][y]) - 2]) <= 76):
             #print("true")
             true += 1
         else:
